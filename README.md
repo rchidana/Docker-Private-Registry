@@ -10,10 +10,10 @@ Add your Ubuntu VM IP address in subjectAltName in the openssl.cnf before genera
 sudo vi /etc/ssl/openssl.cnf
 
 ```
-Add the following with your VM specific IP address in the v3 
+Add the following with your VM specific IP address under the section [ v3_ca ] 
 
 ```
-
+[ v3_ca ]
 subjectAltName=IP:IP_ADDRESS_OF_YOUR_VM
 
 ```
